@@ -1,0 +1,21 @@
+<!doctype html><!--声明当前文档为html文档-->
+<html lang="en"><!--语言为英语-->
+<head><!--头部-->
+	<meta charset="UTF-8"><!--字符编码：utf-8国际编码  gb2312中文编码-->
+	<title>Sokoban</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onkeydown="doKeyDown(event)"><!--身体-->
+	<div class="game">
+		<canvas id="canvas" width="560" height="560"></canvas>
+		<div id="msg"></div>
+		<input type="button" class="btn btn-left" value="上一关" onClick="NextLevel(-1)">
+		<input type="button" class="btn btn-left" value="下一关" onClick="NextLevel(1)">
+		<input type="button" class="btn btn-right" value="重玩本关" onClick="NextLevel(0)">
+	</div>
+	<script src="js/fun.js"></script>
+	<script src="js/mapdata100.js"></script>
+
+</body>
+</html>
